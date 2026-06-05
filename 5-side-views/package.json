@@ -12,8 +12,23 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "my-db",
+          "title": "My DB View",
+          "icon": "$(server)"
+        }
+      ]
+    },
     "views":{
       "explorer": [
+        {
+          "id": "eg-list",
+          "name": "My DB list"
+        }
+      ],
+      "my-db": [
         {
           "id": "db-list",
           "name": "My DB list"
