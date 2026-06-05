@@ -32,6 +32,11 @@
         {
           "id": "db-list",
           "name": "My DB list"
+        },
+        {
+          "id": "db-details",
+          "name": "DB Details",
+          "type": "webview"
         }
       ]
     }
