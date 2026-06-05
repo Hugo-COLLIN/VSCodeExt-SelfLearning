@@ -2,6 +2,7 @@
 **Hugo COLLIN**
 
 1. Hello world using manually written files (0:00-8:50 https://youtu.be/4vLfXL0Rm38)
+<br>1b. Disposable to ask question and for choice-based action (8:52-14:52 https://youtu.be/a5DX5pQ9p5M)
 2. Boilerplate with `npx yo code` (0:00-2:58 https://youtu.be/cj-Q6_k5gSM + 0:00-2:25 https://youtu.be/q5V4T3o3CXE)
 <br>2b. Configurable Hello world (2:58-7:55 https://youtu.be/cj-Q6_k5gSM)
 3. Fetch jokes and display in information panel (7:55-10:18 https://youtu.be/cj-Q6_k5gSM)

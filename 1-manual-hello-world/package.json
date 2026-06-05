@@ -11,13 +11,13 @@
     "contributes": {
         "commands": [
             {
-                "command": "wrapSelection.tryCatch",
-                "title": "Wrap the selection in Try/Catch"
+                "command": "firstDisposable.showAndAsk",
+                "title": "Hello World"
             }
         ]
     },
     "activationEvents": [
-        "onCommand:wrapSelection.tryCatch"
+        "onCommand:firstDisposable.showAndAsk"
     ],
     "devDependencies": {
         "@types/node": "^25.9.1",
