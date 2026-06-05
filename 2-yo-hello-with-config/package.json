@@ -4,7 +4,7 @@
   "description": "from https://youtu.be/cj-Q6_k5gSM",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.120.0"
+    "vscode": "^1.111.0"
   },
   "categories": [
     "Other"
@@ -12,6 +12,18 @@
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration":[
+      {
+        "title": "jokes",
+        "properties": {
+          "greetings": {
+            "type": "string",
+            "description": "Your greetings!",
+            "default": "Bonjour"
+          }
+        }
+      }
+    ],
     "commands": [
       {
         "command": "2-jokes.helloWorld",
