@@ -15,14 +15,27 @@ export function activate(context: vscode.ExtensionContext) {
 	// Now provide the implementation of the command with registerCommand
 	// The commandId parameter must match the command field in package.json
 	const disposable = vscode.commands.registerCommand('2-jokes.helloWorld', () => {
-		// The code you place here will be executed every time your command is executed
-		// Display a message box to the user
-		axios.get("https://api.chucknorris.io/jokes/random").then((response) => {
-			vscode.window.showInformationMessage(response.data.value);
+		let url: string;
+		vscode.window.showQuickPick(["Chuck", "Dev"], {
+			placeholder: "Kind of joke?",
+			canPickMany: false
+		} as const).then((result) => {
+			if (result === undefined) return; // utilisateur a annulé
+
+			let url: string;
+			if (result === "Chuck")
+				url = "https://api.chucknorris.io/jokes/random";
+			else
+				url = "https://v2.jokeapi.dev/joke/Programming?format=txt&type=single";
+
+			axios.get(url).then((response) => {
+				vscode.window.showInformationMessage(response.data.value ?? response.data);
+			})
+			.catch((error: Error) => {
+				vscode.window.showErrorMessage(`Erreur : ${error}`);
+			});
 		})
-		.catch((error) => {
-            vscode.window.showErrorMessage(`Erreur : ${error}`);
-        });
+
 	});
 
 	context.subscriptions.push(disposable);
