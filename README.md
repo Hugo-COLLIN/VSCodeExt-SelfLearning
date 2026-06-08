@@ -12,3 +12,4 @@
 5. Create TreeView My DB list (14:33-21:27 https://youtu.be/cj-Q6_k5gSM)
 <br> 5b. DB list in the ViewContainer activityBar (21:27-23:26 https://youtu.be/cj-Q6_k5gSM)
 <br> 5c. Create WebView DB details, and trigger action from TreeView (23:26-30:00 https://youtu.be/cj-Q6_k5gSM)
+6. AI chatting webview (2:45-7:00 https://youtu.be/clJCDHml2cA)
